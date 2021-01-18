@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>E'lon</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="site-body ">
+  <header class="site-header">
+
+    <div class="container">
+      <div class="site-header__top-box">
+        <h1 class="site-header__title">"Ish" Bor !!!</h1>
+        <button class="siteheader__announce-button" data-toggle="modal" data-target="#exampleModal">E'lon qo'shish</button>
+        <button class="site-header__light-button js-site-header__light-button"></button>
+        <button class="site-header__moon-button js-site-header__moon-button" id="moon"></button>
+      </div>
+      <hr class="top-hr">
+      <nav class="navigation">
+        <form class="navigation__form js-navigation__form" action="#" method="POST">
+          <input class="navigation__form-input navigation__text-input js-navigation__text-input" placeholder="Texnalogiya" type="text">
+          <select class="navigation__form-input navigation__hudud-select js-navigation__hudud-select">
+            <option value="Hudud" disabled selected>Hudud</option>
+            <option value="toshkent" class="option">Toshkent</option>
+            <option value="samarqand" class="option">Samarqand</option>
+          </select>
+          <select class="navigation__form-input navigation__time-select js-avigation__time-select">
+            <option value="ish vaqti" selected disabled>Ish vaqti</option>
+            <option value="09:00-18:00" class="option">09:00-18:00</option>
+            <option value="09:00-14:00" class="option">09:00-14:00</option>
+            <option value="13:00-18:00" class="option">13:00-18:00</option>
+          </select>
+          <input class="navigation__form-input navigation__salary-text js-navigation__salary-text" placeholder="Minimum maosh" type="text">
+          <button class="navigation__form-input navigation__button-search js-navigation__button-search">Qidirish</button>
+        </form>
+      </nav>
+      <hr class="hr-bottom">
+    </div>
+  </header>
+
+
+  <main>
+    <section class="main-section">
+      <div class="container">
+        <ul class="main-section__list js-main-section__list  list-unstyled">
+        </ul>
+      </div>
+    </section>
+
+    <!-- second-modal -->
+
+    <div class="s-modal-wrapper js-s-modal-wrapper" id="item-modal">
+      <div class="s-modal js-s-modal">
+        <div class="s-modal-header js-s-modal-header">
+          <h3 class="s-modal-title js-s-modal-title">E'lon nomi</h3>
+          <button class="s-modal-button js-s-modal-button">Yopish</button>
+        </div>
+        <div class="s-modal-body">
+          <div class="s-location-wrapper js-s-location-wrapper">
+            <p class="s-company js-s-company">Bekorchilar Ltd</p>
+            <p class="s-locate js-s-locate">Toshkent</p>
+          </div>
+          <p class="s-techs js-s-techs">HTML, CSS, Bootstrap, React, Javascript</p>
+          <div class="s-tel-wrapper js-s-tel-wrapper">
+            <p class="s-tg-info ">tg/<span class="js-s-tg-info"></span>;</p>
+            <p class="s-tel-number">tel: <span class="js-s-tel-number"></span>;</p>
+          </div>
+          <div class="worktime-wrapper js-worktime-wrapper">
+            <p class="s-seponsible ">Ma'sul: <span class="js-s-seponsible"></span>;</p>
+            <p class="s-time">Ish vaqti:<span class="js-s-time">09:00-18:00</span>;</p>
+          </div>
+          <p class="s-salary">Eng kam ish haqqi:<span class="js-s-salary">$5600</span>;</p>
+          <hr class="s-hr">
+          <h3 class="s-more-title">Batafsil</h3>
+          <p class="s-more-texxt js-s-more-texxt"></p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- MODAL//E'LON -->
+
+
+    <!-- Modal -->
+    <div class="modal announce__modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog announce-modal__dialog">
+        <div class="modal-content announce-modal__content">
+          <div class="modal-header ennounce-modal__header">
+            <h5 class="modal-title announce__modal-title js-announce__modal-title" id="exampleModalLabel">Yangi e'lon</h5>
+            <button type="buttonjs-announce__modal-close-x announce__modal-close-x " class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body ennounce-modal__body">
+            <form class="announce__form announce-modal__form js-announce-modal__form" action="#" method="POST">
+              <input class="announce__form-item announce__title-input js-announce__title-input" type="text" placeholder="Sarlavha" required>
+              <input class="announce__form-item announce__company js-announce__company" type="text" placeholder="Kampaniya nomi" required>
+              <input class="announce__form-item announce__tech js-announce__tech" type="text" placeholder="Texnalogiyalar(,bilan ajratilgan holda)" required>
+              <input class="announce__form-item announce__tg js-announce__tg" type="text" placeholder="telegram" required>
+              <input class="announce__form-item announce__tel js-announce__tel" type="text" placeholder="Telefon raqami" required>
+              <select class="announce__form-item announce__locate js-announce__locate">
+                <option selected disabled>Hudud</option>
+                <option value="toshkent" class="option">Toshkent</option>
+                <option value="Samarqand" class="option">Samarqand</option>
+              </select>
+              <input class="announce__form-item announce__response js-announce__response" type="text" placeholder="Masul" required>
+              <select class="announce__form-item announce__work-time js-announce__work-time">
+                <option selected disabled>Ish vaqti</option>
+                <option value="09:00-18:00" class="option">09:00-18:00</option>
+                <option value="09:00-14:00" class="option">09:00-14:00</option>
+                <option value="09:00-14:00" class="option">13:00-18:00</option>
+              </select>
+              <input class="announce__form-item announce__salary js-announce__salary" type="text" placeholder="Minimal maosh" required>
+              <textarea class="announce__form-item announce__textarea js-announce__textarea" placeholder="Batafsil" required></textarea>
+              <button class="btn btn-primary  js-add-button" type="submit" >Qo'shish</button>
+            </form>
+          </div>
+          <div class="modal-footer ennounce-modal__footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- SECOND--MODAL//// -->
+
+
+  </main>
+
+<template class="main__template">
+  <li class="main-section__item js-main-section__item ">
+    <span class="time-wrapper js-time-wrapper"><span class="time js-time">5 soat oldin</span>
+    <span class="worktime js-worktime"></span>
+    </span>
+    <a class="main-section__item-announce-name js-announce-name-link h3" href="#item-modal" data-id='001'></a>
+    <p class="main-section__item-employers js-employers"></p>
+    <p class="main-section__item-location js-location"></p>
+  </li>
+</template>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
